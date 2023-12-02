@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { routes } from './routes';
 
-const routes: Routes = [
-
-  { path : '' , component : HomeComponent },
-
+const routes: routes = [
+  { path : '' , component : HomeComponent},
+  { path : "login" , component : LoginComponent},
+  { path : "signUp" , component : Sign-UpComponent},
+  { path : "dataBinding", component: DatabindingComponent},
+  { path : "directives", component: DirectivesComponent},
 ];
 
 @NgModule({
